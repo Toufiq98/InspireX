@@ -1,0 +1,16 @@
+.form{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+}
+.form-column{
+    width: 50%;
+}
+input[type="text"], form input[type="email"], form textarea{
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    width: 75%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+}
