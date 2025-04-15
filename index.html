@@ -36,126 +36,172 @@
 <body class="lg:mx-auto">
     <header>
         <!--navbar-->
-        <section class="mt-10 ">
-            <div class="md:container md:mx-auto font-poppins mt-10 flex  justify-between">
-              <div class="flex ">
-                 <img src="images/sssdddssss 1.png" alt="">
-              </div>
-              <div class="text-lg font-semibold ">
-                 <ul class="flex  gap-10 justify-between">
-                     <li class=" px-4 py-1 rounded-2xl hover:text-red-700">Home</li>
-                     <li class="px-4 py-1 rounded-2xl hover:text-red-700">Services</li>
-                     <li class=" px-4 py-1 rounded-2xl hover:text-red-700">Our works</li>
-                     <li class="px-4 py-1 rounded-2xl hover:text-red-700">About us</li>
-                     <li class="px-4 py-1 rounded-2xl hover:text-red-700">Blog</li>
-                     <li id="contact-button" class="px-4 py-1 border border-red-600 rounded-3xl hover:bg-red-600 hover:text-white ">Contact Us</li>
-                 </ul>
+        <section class="mt-10">
+            <div class="md:container md:mx-auto font-poppins mt-10 sm:mt-2 px-4 sm:px-6 ">
+              <div class="flex justify-between items-center">
+                <div class="">
+                    <img src="images/sssdddssss 1.png" alt="">
+                 </div>
+                 <div class="relative">
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="text-lg font-semibold hidden md:block">
+                      <ul class="flex gap-4 lg:gap-10">
+                        <li class="px-2 py-1 rounded-2xl hover:text-red-700 text-sm lg:text-lg">Home</li>
+                        <li class="px-2 py-1 rounded-2xl hover:text-red-700 text-sm lg:text-lg">Services</li>
+                        <li class="px-2 py-1 rounded-2xl hover:text-red-700 text-sm lg:text-lg">Our works</li>
+                        <li class="px-2 py-1 rounded-2xl hover:text-red-700 text-sm lg:text-lg">About us</li>
+                        <li class="px-2 py-1 rounded-2xl hover:text-red-700 text-sm lg:text-lg">Blog</li>
+                        <li id="contact-button" class="px-3 py-1 border border-red-600 rounded-3xl hover:bg-red-600 hover:text-white text-sm lg:text-lg">Contact Us</li>
+                      </ul>
+                    </div>
+                  
+                    <!-- Mobile Hamburger Button (visible only on mobile) -->
+                    <button class="md:hidden p-2 focus:outline-none" id="hamburger-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    </button>
+                  
+                    <!-- Mobile Menu (hidden by default) -->
+                    <div class="md:hidden hidden absolute right-0 top-full mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50" id="mobile-menu">
+                      <ul class="text-sm font-semibold">
+                        <li><a href="#" class="block px-4 py-2 hover:text-red-700">Home</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:text-red-700">Services</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:text-red-700">Our works</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:text-red-700">About us</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:text-red-700">Blog</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-red-600 hover:bg-red-600 hover:text-white">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
               </div>
             </div>
         </section>
         <hr class="h-8 my-4 w-auto bg-gray-100">
      
           
-        <section class="md:container md:mx-auto font-poppins">
-            <div class="flex justify-between gap-10">
-                <div class="w-1/2 py-36">
-                    <h2 class="text-4xl font-semibold mt-12">Team <span class="text-red-bg">InspireX</span> Digital</h2>
-                    <h3 class="text-5xl font-bold mt-4">Animating Idea & <br> Empowering Digital Growth </h3>
-                    <p class="text-3xl text-red-bg font-bold mt-4 mb-4"><em>Crafting Creativity, Driving Digital Success</em></p>
-                    <small class="font-semibold text-lg">Having a thought you want to share?</small>
-                    <button class="text-lg font-semibold font-poppinns mt-8 px-8 py-4 border border-red-600 rounded-3xl block hover:bg-red-600 hover:text-white" id="touch-button">Get In touch</button>
+        <section class="container md:mx-auto font-poppins px-4 sm:px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10">
+                <div class="w-full lg:w-1/2 py-12 lg:py-36">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold mt-4 lg:mt-12">Team <span class="text-red-bg">InspireX</span> Digital</h2>
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 lg:mt-4">Animating Idea & <br> Empowering Digital Growth </h3>
+                    <p class="text-xl sm:text-2xl md:text-3xl text-red-bg font-bold mt-3 lg:mt-4 mb-4 lg:mb-4"><em>Crafting Creativity, Driving Digital Success</em></p>
+                    <small class="font-semibold text-base sm:text-lg">Having a thought you want to share?</small>
+                    <button class="text-base sm:text-lg font-semibold mt-6 lg:mt-8 px-6 py-3 sm:px-8 sm:py-4 border border-red-600 rounded-3xl block hover:bg-red-600 hover:text-white transition-colors duration-200" id="touch-button">Get In touch</button>
                 </div>
-                <div class="w-1/2 mt-8"> 
-                    <img class="" src="images/logo.jpg" alt="">
+                <div class="w-full lg:w-1/2 mt-6 lg:mt-8 flex justify-center"> 
+                    <img class="w-full max-w-md lg:max-w-none lg:h-auto object-contain md:hidden hidden" src="images/logo.jpg" alt="">
                 </div>
             </div>
         </section>
     </header>
     <hr class="h-8 my-4 w-auto bg-gray-100">
     <main class="">
-        <section class="md:container mx-auto font-poppins">
-            <div class=" my-16 flex mx-76 gap-16">
-                <div class="my-auto w-1/3">
-                    <h2 class="text-3xl font-bold">Here’s why <span class="text-red-bg">InspireX</span> should <br>be your first choice:
+        <section class="container mx-auto font-poppins px-4 sm:px-6">
+            <div class="my-8 md:my-16 flex flex-col lg:flex-row gap-8 lg:gap-16 mx-auto max-w-7xl ">
+                <div class="w-full lg:w-1/3 my-auto">
+                    <h2 class="text-2xl sm:text-3xl font-bold">Here’s why <span class="text-red-bg">InspireX</span> should <br>be your first choice:
                     </h2>
                 </div>
-                <div class="mr-8 w-2/3 text-justify">
-                       <h3  class="text-xl font-bold">Tailored Creativity</h3>
-                       <p class="mt-1">Our design solutions suit each client's specific requirements. We create custom designs for every project based on your brand identity to make sure your visuals attract attention and stick in people's minds.</p>
-                       <h3 class="text-xl font-bold mt-2">Experienced Designers</h3>
-                       <p class="mt-1">Our group of experienced designers knows multiple industries and creates designs that will connect with your target audience based on your specific requirements.</p>
-                       <h3 class="text-xl font-bold mt-2">Detail-Oriented Approach</h3>
-                       <p class="mt-1">Our work begins with perfect planning and ends with precise execution of all details. Your brand demands top quality work.</p>
-                       <h3 class="text-xl font-bold mt-2">Strategic Visual Storytelling</h3>
-                       <p class="mt-1">Our designs build beautiful visuals that highlight your brand story and generate powerful emotional connections with your customers.</p>
-                       <h3 class="text-xl font-bold mt-2">Versatility Across Platforms</h3>
-                       <p class="mt-1">Our team delivers visually-optimized output for all your social media, web design, branding, and marketing design projects.</p>
-                       <h3 class="text-xl font-bold mt-2">High-Speed Delivery Goes Hand in Hand With Excellent Work Quality</h3>
-                       <p class="mt-1">Our team always hits due dates despite their significance. Our team consistently provides excellent designs without missing
+                <div class="lg:mr-8 lg:w-2/3 w-full text-justify">
+                       <div class="">
+                        <h3  class="text-lg sm:text-xl font-bold">Tailored Creativity</h3>
+                        <p class="mt-1 text-sm sm:text-base">Our design solutions suit each client's specific requirements. We create custom designs for every project based on your brand identity to make sure your visuals attract attention and stick in people's minds.</p>
+                       </div>
+                       <div>
+                        <h3 class="text-lg sm:text-xl font-bold">Experienced Designers</h3>
+                        <p class="mt-1 text-sm sm:text-base">Our group of experienced designers knows multiple industries and creates designs that will connect with your target audience based on your specific requirements.</p>
+                       </div>
+                       <div class="">
+                        <h3 class="text-lg sm:text-xl font-bold">Detail-Oriented Approach</h3>
+                        <p class="text-sm sm:text-base mt-1">Our work begins with perfect planning and ends with precise execution of all details. Your brand demands top quality work.</p>
+                       </div>
+                       <h3 class="text-lg sm:text-xl font-bold">Strategic Visual Storytelling</h3>
+                       <p class="text-sm sm:text-base mt-1">Our designs build beautiful visuals that highlight your brand story and generate powerful emotional connections with your customers.</p>
+                       <div>
+                        <h3 class="text-lg sm:text-xl font-bold">Versatility Across Platforms</h3>
+                        <p class="text-sm sm:text-basemt-1">Our team delivers visually-optimized output for all your social media, web design, branding, and marketing design projects.</p>
+                       </div>
+                       <div>
+                        <h3 class="text-lg sm:text-xl font-bold">High-Speed Delivery Goes Hand in Hand With Excellent Work Quality</h3>
+                        <p class="text-sm sm:text-base mt-1">Our team always hits due dates despite their significance. Our team consistently provides excellent designs without missing
                         deadlines.</p>  
+                       </div>
                 </div>
             </div>
-            <button  class="text-lg font-semibold font-poppinns px-8 py-4 border border-red-600 rounded-3xl block  hover:bg-red-600 hover:text-white m-auto  mb-12" id="touch-button1">Get In touch</button>
+            <button  class="text-base sm:text-lg font-semibold px-6 py-3 sm:px-8 sm:py-4 border border-red-600 rounded-3xl block hover:bg-red-600 hover:text-white mx-auto my-8 sm:mb-12 transition-colors duration-200" id="touch-button1">Get In touch</button>
            
         </section>
         <hr class="h-8 my-4 w-auto bg-gray-100">
         <!--Service section-->
-        <section class="md:container mx-auto font-poppins">
-            <h2 class="text-red-bg text-3xl font-bold mt-2">Our Services</h2>
-            <h2 class=" font-bold text-2xl mt-2"><em>Let’s make something incredible</em></h2>
-            <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-10 my-24 mx-80 ">
-                <button class="text-2xl  font bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-6 transition duration-150 ">GRAPHICS DESIGN</button>
-                <button class="text-2xl font bold  bg-ser-bg  hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-6 transition duration-150">UI UX DESIGN</button>
-                <button class="text-2xl font bold  bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-6 transition duration-150">SOCIAL MEDIA MARKETING</button>
-                <button class="text-2xl font bold  bg-ser-bg   hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-6 transition duration-150">VIDEO EDITING</button>
-                <button class="text-2xl font bold  bg-ser-bg  hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-6 transition duration-150">SEO</button>
-                <button class="text-2xl font bold  bg-ser-bg   hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-6 transition duration-1504">WEB DEVELOPMENT</button>
+        <section class="md:container mx-auto font-poppins px-4 sm:px-6">
+            <h2 class="text-red-bg text-2xl md:text-3xl font-bold mt-2">Our Services</h2>
+            <h2 class=" font-bold text-xl md:text-2xl mt-2"><em>Let’s make something incredible</em></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-10 my-8 md:my-12 lg:my-24 mx-auto max-w-7xl ">
+                <button class="text-lg md:text-2xl font-bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-4 md:py-6 transition-all duration-150">GRAPHICS DESIGN</button>
+                <button class="text-lg md:text-2xl font-bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-4 md:py-6 transition-all duration-150">UI UX DESIGN</button>
+                <button class="text-lg md:text-2xl font-bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-4 md:py-6 transition-all duration-150">SOCIAL MEDIA MARKETING</button>
+                <button class="text-lg md:text-2xl font-bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-4 md:py-6 transition-all duration-150">VIDEO EDITING</button>
+                <button class="text-lg md:text-2xl font-bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-4 md:py-6 transition-all duration-150">SEO</button>
+                <button class="text-lg md:text-2xl font-bold bg-ser-bg hover:bg-red-bg rounded-xl hover:rounded-3xl px-4 py-4 md:py-6 transition-all duration-150">WEB DEVELOPMENT</button>
             </div>
         </section>
         <hr class="h-8 my-4 w-auto bg-gray-100">
         <!--Work Section-->
-        <section class="md:container mx-auto font-poppins">
-           <div class="flex justify-between ">
+        <section class="container mx-auto font-poppins px-4 sm:px-6">
+           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 ">
             <div>
-                <h2 class="text-red-bg text-3xl font-bold mt-2">Our works</h2>
-                <h2 class=" font-bold text-2xl mt-2"><em>Creativity we crafted</em></h2>
+                <h2 class="text-red-bg text-2xl md:text-3xl font-bold mt-2">Our works</h2>
+                <h2 class=" font-bold text-xl md:text-2xl mt-2"><em>Creativity we crafted</em></h2>
             </div>
-            <div>
-                <button class="px-8 py-2 font-bold text-lg border border-red-600 rounded-3xl hover:bg-red-600 hover:text-white ">View All</button>
+            <div class="mt-4 sm:mt-8">
+                <button class="px-6 py-2 md:px-8 md:py-2 font-bold text-base md:text-lg border border-red-600 rounded-3xl hover:bg-red-600 hover:text-white transition-colors duration-200">View All</button>
             </div>
            </div>
-           <div class="flex h-80 justify-between  my-10">
-            <img class="" src="images/Workleap.png" alt="">
-            <img class=" " src="images/Xpj Trading.PNG" alt="">
-            <img class=" " src="images/Miga Studio.png" alt="">
+           <div class="flex flex-col md:flex-row  justify-between items-center gap-6 my-6 md:my-10">
+            <img class="w-full h-auto md:h-80 object-cover rounded-lg" src="images/Workleap.png" alt="">
+            <img class=" w-full h-auto md:h-80 object-cover rounded-lg" src="images/Xpj Trading.PNG" alt="">
+            <img class=" w-full h-auto md:h-80 object-cover rounded-lg" src="images/Miga Studio.png" alt="">
            </div>
         </section>
         <hr class="h-8 my-4 w-auto bg-gray-100">
         <!--Partner section-->
-        <section class="md:container mx-auto font-poppins">
-            <h2 class="text-red-bg text-3xl font-bold mt-2">Our Esteemed Partners</h2>
-            <div class="grid grid-cols-3 p-10 my-10">
-                <img src="images/download (1).png" alt="">
-                <img src="images/images.png" alt="">
-                <img src="images/images__1_-removebg-preview.png" alt="">
-                <img src="images/images (2).png" alt="">
-                <img class="h-40 w-60" src="images/Adobe-Logo.png" alt="">
+        <section class="container mx-auto font-poppins px-4 sm:px-6">
+            <h2 class="text-red-bg text-2xl md:text-3xl font-bold mt-2 ">Our Esteemed Partners</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-8 py-6 md:py-10 my-6 md:my-10 my-10">
+                <div class="flex items-center justify-center p-2">
+                    <img class="max-h-16 md:max-h-20 w-auto object-contain" src="images/download (1).png" alt="Partner logo">
+                </div>
+                <div class="flex items-center justify-center p-2">
+                    <img class="max-h-16 md:max-h-20 w-auto object-contain" src="images/images.png" alt="Partner logo">
+                </div>
+                <div class="flex items-center justify-center p-2">
+                    <img class="max-h-16 md:max-h-20 w-auto object-contain" src="images/images__1_-removebg-preview.png" alt="Partner logo">
+                </div>
+                <div class="flex items-center justify-center p-2">
+                    <img class="max-h-16 md:max-h-20 w-auto object-contain" src="images/images (2).png" alt="Partner logo">
+                </div>
+                <div class="flex items-center justify-center p-2">
+                    <img class="max-h-16 md:max-h-20 w-auto object-contain" src="images/Adobe-Logo.png" alt="Adobe logo">
+                </div>
             </div>
         </section>
         <hr class="h-8 my-4 w-auto bg-gray-100">
         <!--motto and process section-->
-        <section class="md:container mx-auto font-poppins">
-            <h2 class="text-red-bg text-3xl font-bold mt-2">About Us</h2>
-            <p class="font-semibold"><em><u>Our Design Work Encourages, Connects, and Transforms Users</u></em></p>
-            <p class="font-semibold my-4">Through top graphic design skills we transform your concepts into reality. Our team transforms creative concepts into powerful branding designs and effective social media content plus professional marketing materials.
+        <section class="container mx-auto font-poppins px-4 sm:px-6">
+            <h2 class="text-red-bg text-2xl md:text-3xl font-bold mt-2">About Us</h2>
+            <p class="font-semibold text-sm sm:text-base"><em><u>Our Design Work Encourages, Connects, and Transforms Users</u></em></p>
+           <div class="space-y-3 sm:space-y-4 my-4">
+            <p class="font-semibold text-sm sm:text-base ">Through top graphic design skills we transform your concepts into reality. Our team transforms creative concepts into powerful branding designs and effective social media content plus professional marketing materials.
             </p>
-            <p class="font-semibold my-4">Good-looking design is only one part of the equation while telling stories through design creates emotional connections that stick with people. Our work goes beyond designs to deliver immersive experiences that connect with your audience base.</p>
-            <h2 class="font-bold text-2xl mt-8"><em><u>Our Motto:</u></em></h2>
-            <h2 class="text-red-bg text-3xl font-bold mt-2"><em>Ignite,Create,Inspire</em></h2>
-            <p class="text-lg text-justify mt-5 font-medium">The team at InspireX holds firm belief in creative innovation which converts concepts into meaningful digital engagements. Our basic goal aims to ignite creative ideas followed by compelling strategy development which leads to brand inspiration for new achievements. Each project receives our passionate and precise approach to social media management and design work and video editing services making your vision triumphant in digital crowds.</p>
-            <h2 class="font-bold text-2xl mt-10"><em><u>Our work and thought process:</u></em></h2>
-            <h2 class="text-red-bg text-3xl font-bold mt-2"><em>How we Inspire,Craft and turn your business into a brand</em></h2>
-            <ol class="text-lg mt-5 font-medium text-justify list-disc ">
+            <p class="font-semibold text-sm sm:text-base">Good-looking design is only one part of the equation while telling stories through design creates emotional connections that stick with people. Our work goes beyond designs to deliver immersive experiences that connect with your audience base.</p>
+           </div>
+            <h2 class="font-bold text-xl sm:text-2xl mt-6 sm:mt-8"><em><u>Our Motto:</u></em></h2>
+            <h2 class="text-red-bg text-2xl sm:text-3xl font-bold mt-2"><em>Ignite,Create,Inspire</em></h2>
+            <p class="text-sm sm:text-lg text-justify mt-4 sm:mt-5 font-medium">The team at InspireX holds firm belief in creative innovation which converts concepts into meaningful digital engagements. Our basic goal aims to ignite creative ideas followed by compelling strategy development which leads to brand inspiration for new achievements. Each project receives our passionate and precise approach to social media management and design work and video editing services making your vision triumphant in digital crowds.</p>
+            <h2 class="font-bold text-xl sm:text-2xl mt-8 sm:mt-10"><em><u>Our work and thought process:</u></em></h2>
+            <h2 class="text-red-bg text-2xl sm:text-3xl font-bold mt-2"><em>How we Inspire,Craft and turn your business into a brand</em></h2>
+            <ol class="text-sm sm:text-lg mt-4 sm:mt-5 font-medium space-y-3 sm:space-y-4 text-justify list-disc pl-5 sm:pl-6 ">
                 <li class="my-2">The approach at InspireX delivers professional creative solutions which perfectly match your brand requirements using an organized procedure.
                 </li>
                 <li class="my-2">Start by learning your goals then creating your target audience profile for building a strategic plan which reinforces your brand identity.
@@ -174,39 +220,39 @@
         </section>
         <hr class="h-8 my-4 w-auto bg-gray-100">
         <!--Blog Section-->
-        <section class="md:container mx-auto font-poppins">
-            <div class="flex justify-between py-10">
+        <section class="container mx-auto font-poppins px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 py-6 sm:py-8 md:py-10">
                 <div>
-                    <h3 class="text-3xl font-bold text-red-bg">Blog</h3>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-red-bg">Blog</h3>
                 </div>
                 <div>
-                    <button class="px-8 py-2 font-bold text-lg border border-red-600 rounded-3xl hover:bg-red-600 hover:text-white">See All</button>
+                    <button class="px-6 py-1.5 sm:px-8 sm:py-2 font-bold text-base sm:text-lg border border-red-600 rounded-3xl hover:bg-red-600 hover:text-white transition-colors duration-200">See All</button>
                 </div>
             </div>
         </section>
         
     </main>
     <footer class="bg bg-gray-900 ">
-        <section class="flex justify-between p-6">
-            <div class="">
-                <div class="w-[100px] h-[100px] bg-white rounded-full flex items-center justify-center ">
-                    <img class="  " src="images/sssdddssss 1.png" alt="" >
+        <section class="flex flex-col md:flex-row justify-between items-center gap-6 p-4 sm:p-6">
+            <div class="order-1 md:order-none">
+                <div class=" bg-white rounded-full flex items-center justify-center ">
+                    <img class=" w-3/4 h-auto " src="images/sssdddssss 1.png" alt="" >
                 </div>
             </div>
-            <div>
-                <h3 class="text-white font-bold text-3xl text-center"><i>Reach out to us:</i></h3>
-                <div class="flex gap-6 p-4 mt-2">
-                    <img class=" h-10 w-10 "  src="icons/fb.jpg" alt="">
-                    <img class=" h-10 w-10"  src="icons/inst.jpg" alt="">
-                    <img class=" h-10 w-10" src="icons//ln.jpg" alt="">
-                    <img class="h-10 w-10"  src="icons/wp.jpg" alt="">
-                    <img class=" h-10 w-10" src="icons/x.jpg" alt="">
+            <div class="order-3 md:order-none w-full md:w-auto">
+                <h3 class="text-white font-bold text-xl sm:text-2xl md:text-3xl text-center"><i>Reach out to us:</i></h3>
+                <div class="flex justify-center gap-3 sm:gap-6 p-2 sm:p-4 mt-2">
+                    <img class="h-8 w-8  sm:h-10 sm:w-10 "  src="icons/fb.jpg" alt="">
+                    <img class="h-8 w-8  sm:h-10 sm:w-10 "  src="icons/inst.jpg" alt="">
+                    <img class="h-8 w-8  sm:h-10 sm:w-10" src="icons//ln.jpg" alt="">
+                    <img class="h-8 w-8  sm:h-10 sm:w-10"  src="icons/wp.jpg" alt="">
+                    <img class=" h-8 w-8  sm:h-10 sm:w-10" src="icons/x.jpg" alt="">
                     
                 </div>
             </div>
            
-            <div class="text-white mt-8 " >
-                <h2 class="text-xl font-manrope font-bold text-gray-300"><i>All Rights by Team InspireX Digital,2025</i></h2>
+            <div class="order-2 md:order-none text-white mt-0 md:mt-8 text-center md:text-left " >
+                <h2 class="text-sm sm:text-base md:text-xl font-manrope font-bold text-gray-300"><i>All Rights by Team InspireX Digital,2025</i></h2>
                 
             </div>
         </section>
